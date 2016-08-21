@@ -1,0 +1,2 @@
+# angularSPA
+Practice with Angular
