@@ -3,9 +3,16 @@
   <div class="row">
     <div class="ps-logo-area col-sm-6">
       <img ng-src="{{ iconFile }}" alt="" class="ps-icon">
+
       <div class="ps-title-area">
         <p class="ps-logo-title">{{ title }}</p>
         <p class="ps-logo-subtitle">{{ subtitle }}</p>
+      </div>
+
+      <div ng-if="isMenuButtonVisible" ng-click="menuButtonClicked()" class="ps-collapsed-menu pull-right">
+        <button type="button" class="btn ps-nav-button">
+          <i class="fa fa-bars"></i>
+        </button>
       </div>
     </div>
     <div class="ps-right-side-controls col-sm-6">
@@ -19,3 +26,7 @@
 </div>
 
 <div ng-transclude></div>
+
+<div style="position: absolute; left: 220px; color: red; font-size: 44px;">
+  {{ routeString }}
+</div>

@@ -11,7 +11,7 @@
 }
 
 .ps-logo-area {
-  text-align: center;
+  /*text-align: center;*/
 }
 
 .ps-icon {
@@ -33,6 +33,17 @@
   font-size: 13px;
   margin-top: -13px;
 }
+
+@media screen and (max-width: 430px){
+  .ps-icon {
+    display: none;
+  }
+
+  .ps-logo-title {
+    font-size: 18px;
+  }
+}
+
 
 .ps-right-side-controls{
   line-height: 60px;
